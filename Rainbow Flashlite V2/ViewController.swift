@@ -11,8 +11,13 @@ import UIKit
 
 
 class ViewController: UIViewController {
+    
+//    Убираем status bar с main view controller
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 
-//    Создаем переменную, которой буем присваивать значения цветов радуги
+//    Создаем переменную, которой будем присваивать значения цветов радуги
     var colorOfScreen: Int = 0
     
 //    Создаем функцию, которая будет изменять цвет нашего background в зависимости от цифры в переменной colorOfScreen к о ж з г с ф
